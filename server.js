@@ -2,7 +2,7 @@ const express=require("express");
 const app= express();
 app.use(express.json());
 const cors =require("cors");
-app.use(cors({origin:["http://localhost:3000","https://todo-list-gbtf.onrender.com/"]}));
+app.use(cors());
 const doEnv=require("dotenv");
 doEnv.config();
 require("./Database/dbConnection");//database 
